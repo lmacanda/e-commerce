@@ -1,5 +1,5 @@
 import styles from "./Slide.module.scss";
-import Button from "../button/Button";
+
 import Link from "next/link";
 
 interface ISlide {
@@ -19,7 +19,7 @@ const Slide: React.FC<ISlide> = ({ title, subtitle, buttonText, children }) => {
       <div>{children}</div>
       <div className={styles.center}>
         <Link href="/shop">
-          <Button fontSize="reguar">{buttonText}</Button>
+          <button>View More</button>
         </Link>
       </div>
     </div>

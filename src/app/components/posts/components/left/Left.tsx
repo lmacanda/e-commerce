@@ -3,7 +3,7 @@
 import React from "react";
 import Image from "next/image";
 import styles from "./Left.module.scss";
-import Button from "@/app/components/button/Button";
+
 import { useState, useEffect } from "react";
 import { type } from "os";
 
@@ -188,7 +188,7 @@ function Left() {
                   <p className={styles.content}>{blogPost.content}</p>
                 </div>
                 <div className={styles.button}>
-                  <Button fontSize="regular">Read More</Button>
+                  <button>Read more</button>
                 </div>
               </div>
             </div>

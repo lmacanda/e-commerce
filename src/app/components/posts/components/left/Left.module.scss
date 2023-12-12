@@ -3,6 +3,12 @@
 .container {
   padding: 1rem;
   width: 60vw;
+
+  button {
+    font-weight: 500;
+    font-size: 24px;
+  }
+
   .wrapper {
     display: flex;
     flex-direction: column;

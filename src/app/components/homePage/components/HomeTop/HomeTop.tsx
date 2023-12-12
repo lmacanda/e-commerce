@@ -1,13 +1,12 @@
 import Image from "next/image";
 import styles from "./HomeTop.module.scss";
-import Button from "@/app/components/button/Button";
 
 function HomeTop() {
   return (
     <div className={styles.container}>
       <div className={styles.text}>
         <h1 className={styles.title}>Rocket single seater</h1>
-        <Button fontSize="bold">Shop Now</Button>
+        <button>Shop Now</button>
       </div>
       <div className="image">
         <Image

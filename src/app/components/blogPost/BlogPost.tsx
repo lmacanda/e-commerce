@@ -1,6 +1,5 @@
 import Image from "next/image";
 import styles from "./BlogPost.module.scss";
-import Button from "@/app/components/button/Button";
 
 function BlogPost() {
   interface IBlogPost {
@@ -53,7 +52,7 @@ function BlogPost() {
               <p className={styles.description}>
                 {blogPost.content.substring(0, 100)}
               </p>
-              <Button fontSize="bold">Read More</Button>
+              <button>Read More</button>
               <div className={styles.date}>
                 <span className={styles.dateTime}>
                   <Image

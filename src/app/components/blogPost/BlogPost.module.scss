@@ -4,6 +4,12 @@
   justify-content: center;
   gap: 1.5rem;
 
+  button {
+    font-weight: 500;
+    font-size: 24px;
+    border-bottom: 2px solid black;
+  }
+
   .tiles {
     display: flex;
     flex-direction: column;

@@ -1,6 +1,5 @@
 import Image from "next/image";
 import styles from "./HomeBottom.module.scss";
-import Button from "@/app/components/button/Button";
 
 function HeroBottom() {
   return (
@@ -16,7 +15,7 @@ function HeroBottom() {
         </div>
         <div className={styles.button}>
           <p className={styles.text}>Side table</p>
-          <Button fontSize="bold">View More</Button>
+          <button>View More</button>
         </div>
       </div>
 
@@ -31,7 +30,7 @@ function HeroBottom() {
         </div>
         <div className={styles.button}>
           <p className={styles.text}>Cloud couch</p>
-          <Button fontSize="bold">View More</Button>
+          <button>View More</button>
         </div>
       </div>
     </div>
