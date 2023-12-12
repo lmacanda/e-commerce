@@ -1,23 +1,10 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-const items: ICart[] =
-  localStorage.getItem("cartItems") != null
-    ? JSON.parse(localStorage.getItem("cartItems")!) ?? []
-    : [];
-const totalAmount: number =
-  localStorage.getItem("totalAmount") != null
-    ? JSON.parse(localStorage.getItem("totalAmount")!) ?? 0
-    : 0;
-const totalItems: number =
-  localStorage.getItem("totalItems") != null
-    ? JSON.parse(localStorage.getItem("totalItems")!) ?? 0
-    : 0;
-
 export interface ICart {
   id: string;
   name: string;
   price: number;
-  image: string; // Add or adjust this line based on your actual data structure
+  image: string;
   color?: string | null;
   size?: string | null;
   quantity: number;
@@ -30,9 +17,9 @@ interface CartState {
 }
 
 const initialState: CartState = {
-  cartItems: items,
-  totalAmount: totalAmount,
-  totalItems: totalItems,
+  cartItems: [],
+  totalAmount: 0,
+  totalItems: 0,
 };
 
 export const cartSlice = createSlice({
@@ -40,7 +27,6 @@ export const cartSlice = createSlice({
   initialState,
   reducers: {
     addToCart(state, action) {
-      console.log(action);
       const item = action.payload;
       let productItem = state.cartItems.find(
         (product) => product.id === item.id
@@ -60,15 +46,6 @@ export const cartSlice = createSlice({
         (accumulator, item) => accumulator + item.quantity,
         0
       );
-
-      localStorage.setItem(
-        "cartItems",
-        JSON.stringify(state.cartItems.map((item) => item))
-      );
-
-      localStorage.setItem("totalAmount", JSON.stringify(state.totalAmount));
-
-      localStorage.setItem("totalItems", JSON.stringify(state.totalItems));
     },
     incrementQ(state, action) {
       const item = action.payload;
