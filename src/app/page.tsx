@@ -11,6 +11,7 @@ export default function Home() {
       <HomePage />
       <Slide
         buttonText={"View More"}
+        //@ts-ignore
         pageName={"shop"}
         title="Top Picks For You"
         subtitle="Find a bright ideal to suit your taste with our great selection of suspension, floor and table lights."
