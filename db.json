@@ -1,0 +1,223 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "images": ["IMG1_1", "IMG1_2", "IMG1_3", "IMG1_4", "IMG1"],
+      "name": "Trenton modular sofa_3",
+      "price": "25,000.00",
+      "description": "Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound.",
+      "colors": [
+        "rgba(129, 109, 250, 1)",
+        "rgba(0, 0, 0, 1)",
+        "rgba(205, 186, 123, 1)"
+      ],
+      "sizes": ["L", "XL", "XS"],
+      "sku": "SS001",
+      "category": "Sofas",
+      "tags": ["sofa", "furniture", "living room"],
+      "style": {
+        "transform": "translateY(30px)"
+      }
+    },
+    {
+      "id": 2,
+      "images": ["IMG1_1", "IMG1_2", "IMG1_3", "IMG1_4", "IMG2"],
+      "name": "Granite dining table with dining chair",
+      "price": "25,000.00",
+      "description": "Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound.",
+      "colors": ["red", "black", "blue"],
+      "sizes": ["S", "M", "L", "XL"],
+      "sku": "SS001",
+      "category": "Sofas",
+      "tags": ["sofa", "furniture", "living room"]
+    },
+    {
+      "id": 3,
+      "images": ["IMG1_1", "IMG1_2", "IMG1_3", "IMG1_4", "IMG3"],
+      "name": "Outdoor bar table and stool",
+      "price": 30,
+      "description": "Description for Product 3",
+      "colors": ["red", "black", "blue"],
+      "sizes": ["S", "M", "L", "XL"],
+      "sku": "SS001",
+      "category": "Sofas",
+      "tags": ["sofa", "furniture", "living room"]
+    },
+    {
+      "id": 4,
+      "images": ["IMG1_1", "IMG1_2", "IMG1_3", "IMG1_4", "IMG4"],
+      "name": "Plain console with teak mirror",
+      "price": 20,
+      "description": "Description for Product 2",
+      "colors": ["red", "black", "blue"],
+      "sizes": ["S", "M", "L", "XL"],
+      "sku": "SS001",
+      "category": "Sofas",
+      "tags": ["sofa", "furniture", "living room"]
+    },
+    {
+      "id": 5,
+      "images": ["IMG1_1", "IMG1_2", "IMG1_3", "IMG1_4", "IMG5"],
+      "name": "Grain coffee table",
+      "price": 20,
+      "description": "Description for Product 2",
+      "colors": ["red", "black", "blue"],
+      "sizes": ["S", "M", "L", "XL"],
+      "sku": "SS001",
+      "category": "Sofas",
+      "tags": ["sofa", "furniture", "living room"]
+    },
+    {
+      "id": 6,
+      "images": ["IMG1_1", "IMG1_2", "IMG1_3", "IMG1_4", "IMG6"],
+      "name": "Kent coffee table",
+      "price": 20,
+      "description": "Description for Product 2",
+      "colors": ["red", "black", "blue"],
+      "sizes": ["S", "M", "L", "XL"],
+      "sku": "SS001",
+      "category": "Sofas",
+      "tags": ["sofa", "furniture", "living room"]
+    },
+    {
+      "id": 7,
+      "images": ["IMG1_1", "IMG1_2", "IMG1_3", "IMG1_4", "IMG7"],
+      "name": "Round coffee table_color 2",
+      "price": 20,
+      "description": "Description for Product 2",
+      "colors": ["red", "black", "blue"],
+      "sizes": ["S", "M", "L", "XL"],
+      "sku": "SS001",
+      "category": "Sofas",
+      "tags": ["sofa", "furniture", "living room"],
+      "style": {
+        "transform": "translateY(30px)"
+      }
+    },
+    {
+      "id": 8,
+      "images": ["IMG1_1", "IMG1_2", "IMG1_3", "IMG1_4", "IMG8"],
+      "name": "Reclaimed teak coffee table",
+      "price": 20,
+      "description": "Description for Product 2",
+      "colors": ["red", "black", "blue"],
+      "sizes": ["S", "M", "L", "XL"],
+      "sku": "SS001",
+      "category": "Sofas",
+      "tags": ["sofa", "furniture", "living room"]
+    },
+    {
+      "id": 9,
+      "images": ["IMG1_1", "IMG1_2", "IMG1_3", "IMG1_4", "IMG9"],
+      "name": "Plain console_",
+      "price": 20,
+      "description": "Description for Product 2",
+      "colors": ["red", "black", "blue"],
+      "sizes": ["S", "M", "L", "XL"],
+      "sku": "SS001",
+      "category": "Sofas",
+      "tags": ["sofa", "furniture", "living room"]
+    },
+    {
+      "id": 10,
+      "images": ["IMG1_1", "IMG1_2", "IMG1_3", "IMG1_4", "IMG10"],
+      "name": "Reclaimed teak Sideboard 1",
+      "price": 20,
+      "description": "Description for Product 2",
+      "colors": ["red", "black", "blue"],
+      "sizes": ["S", "M", "L", "XL"],
+      "style": {
+        "transform": "translateY(30px)"
+      }
+    },
+    {
+      "id": 11,
+      "images": ["IMG1_1", "IMG1_2", "IMG1_3", "IMG1_4", "IMG11"],
+      "name": "SJP_0825  1",
+      "price": 20,
+      "description": "Description for Product 2",
+      "colors": ["red", "black", "blue"],
+      "sizes": ["S", "M", "L", "XL"],
+      "sku": "SS001",
+      "category": "Sofas",
+      "tags": ["sofa", "furniture", "living room"]
+    },
+    {
+      "id": 12,
+      "images": ["IMG1_1", "IMG1_2", "IMG1_3", "IMG1_4", "IMG12"],
+      "name": "Bella chair and table 1",
+      "price": 20,
+      "description": "Description for Product 2",
+      "colors": ["red", "black", "blue"],
+      "sizes": ["S", "M", "L", "XL"],
+      "sku": "SS001",
+      "category": "Sofas",
+      "tags": ["sofa", "furniture", "living room"]
+    },
+    {
+      "id": 13,
+      "images": ["IMG1_1", "IMG1_2", "IMG1_3", "IMG1_4", "IMG13"],
+      "name": "Granite square side table 2",
+      "price": 20,
+      "description": "Description for Product 2",
+      "colors": ["red", "black", "blue"],
+      "sizes": ["S", "M", "L", "XL"],
+      "sku": "SS001",
+      "category": "Sofas",
+      "tags": ["sofa", "furniture", "living room"],
+      "style": {
+        "transform": "translateY(30px)"
+      }
+    },
+    {
+      "id": 14,
+      "images": ["IMG1_1", "IMG1_2", "IMG1_3", "IMG1_4", "IMG14"],
+      "name": "Asgaard sofa",
+      "price": 20,
+      "description": "Description for Product 2",
+      "colors": ["red", "black", "blue"],
+      "sizes": ["S", "M", "L", "XL"],
+      "sku": "SS001",
+      "category": "Sofas",
+      "tags": ["sofa", "furniture", "living room"]
+    },
+    {
+      "id": 15,
+      "images": ["IMG1_1", "IMG1_2", "IMG1_3", "IMG1_4", "IMG15"],
+      "name": "Maya sofa three seater",
+      "price": 20,
+      "description": "Description for Product 2",
+      "colors": ["red", "black", "blue"],
+      "sizes": ["S", "M", "L", "XL"],
+      "sku": "SS001",
+      "category": "Sofas",
+      "tags": ["sofa", "furniture", "living room"]
+    },
+    {
+      "id": 16,
+      "images": ["IMG1_1", "IMG1_2", "IMG1_3", "IMG1_4", "IMG16"],
+      "name": "Outdoor sofa set 1",
+      "price": 20,
+      "description": "Description for Product 2",
+      "colors": ["red", "black", "blue"],
+      "sizes": ["S", "M", "L", "XL"],
+      "sku": "SS001",
+      "category": "Sofas",
+      "tags": ["sofa", "furniture", "living room"]
+    }
+  ],
+  "reviews": [
+    {
+      "product_id": 1,
+      "rating": 5,
+      "comment": "Great sofa! Very comfortable and stylish.",
+      "user": "JohnDoe123"
+    },
+    {
+      "product_id": 1,
+      "rating": 4,
+      "comment": "The price is a bit high, but the quality is excellent.",
+      "user": "JaneSmith456"
+    }
+  ]
+}

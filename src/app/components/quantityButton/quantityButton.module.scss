@@ -1,0 +1,22 @@
+.quantity_button {
+  border-radius: 10px;
+  border: 1px solid #9f9f9f;
+  padding: 1rem 1.5rem;
+  background-color: #fff;
+
+  &_btn {
+    &_increment {
+      border: none;
+      background: none;
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+    }
+
+    &_decrement {
+      border: none;
+      background: none;
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+    }
+  }
+}

@@ -1,0 +1,14 @@
+.shop {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 758px) {
+  .shop {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: baseline;
+    padding: 3rem;
+  }
+}/*# sourceMappingURL=shop.module.css.map */

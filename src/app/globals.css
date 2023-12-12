@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  :root {
+    overflow-x: hidden;
+    max-width: 100%;
+  }
+}
+:root {
+  overflow-x: hidden;
+  --orange: #e67e22;
+  --black: #333;
+  --light-color: #777;
+  --border: 0.1rem solid rgba(0, 0, 0, 0.2);
+  --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}

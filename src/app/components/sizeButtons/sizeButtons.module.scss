@@ -1,0 +1,16 @@
+.size_buttons {
+  display: flex;
+  gap: 5%;
+  margin-bottom: 5%;
+
+  button {
+    width: 25px;
+    height: 25px;
+    border-radius: 5px;
+    background-color: #faf4f4;
+  }
+
+  button:hover {
+    background-color: rgba(251, 235, 181, 1);
+  }
+}

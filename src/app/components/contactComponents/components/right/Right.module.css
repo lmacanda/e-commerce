@@ -1,0 +1,75 @@
+.container {
+  position: relative;
+}
+.container .form .userInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  padding: 1rem;
+}
+.container .form .userInfo .label {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
+@media (max-width: 768px) {
+  .container .form .userInfo .label {
+    width: 100%;
+  }
+}
+.container .form .userInfo .input {
+  width: 33.047rem;
+  height: 4.688rem;
+  max-height: 4.688rem;
+  min-height: 2rem;
+  border-radius: 0.625rem;
+  border: 1px solid #9f9f9f;
+}
+.container .form .userInfo .input::-moz-placeholder {
+  padding-left: 1rem;
+}
+.container .form .userInfo .input::placeholder {
+  padding-left: 1rem;
+}
+@media (max-width: 768px) {
+  .container .form .userInfo .input {
+    width: 100%;
+    height: 3rem;
+  }
+}
+.container .form .userInfo .textArea {
+  width: 32.938rem;
+  height: 7.5rem;
+  border: 1px solid #9f9f9f;
+  resize: none;
+  border-radius: 0.625rem;
+}
+.container .form .userInfo .textArea::-moz-placeholder {
+  padding-left: 1rem;
+  padding-top: 1rem;
+}
+.container .form .userInfo .textArea::placeholder {
+  padding-left: 1rem;
+  padding-top: 1rem;
+}
+@media (max-width: 768px) {
+  .container .form .userInfo .textArea {
+    width: 100%;
+  }
+}
+.container .form .userInfo .button {
+  width: 14.813rem;
+  height: 3rem;
+  border-radius: 0.938rem;
+  border: 1px solid black;
+  font-weight: 400;
+  font-size: 1rem;
+  margin-top: 2rem;
+}
+@media (max-width: 768px) {
+  .container .form .userInfo .button {
+    width: 100%;
+  }
+}/*# sourceMappingURL=Right.module.css.map */

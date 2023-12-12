@@ -1,0 +1,17 @@
+.wrapper {
+  @media screen and (max-width: 768px) {
+    // width: 100%;
+  }
+
+  .container {
+    display: flex;
+    padding: 4rem;
+    gap: 1rem;
+
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+      padding: 2vh;
+      align-items: center;
+    }
+  }
+}

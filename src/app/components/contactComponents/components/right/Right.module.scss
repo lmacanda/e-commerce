@@ -1,0 +1,72 @@
+@import "../../../../colors";
+
+.container {
+  position: relative;
+
+  .form {
+    .userInfo {
+      display: flex;
+      flex-direction: column;
+      align-items: baseline;
+      padding: 1rem;
+
+      .label {
+        font-size: 1rem;
+        font-weight: 500;
+        line-height: 1.5rem;
+        padding-bottom: 15px;
+        padding-top: 15px;
+        @media (max-width: 768px) {
+          width: 100%;
+        }
+      }
+
+      .input {
+        width: 33.047rem;
+        height: 4.688rem;
+        max-height: 4.688rem;
+        min-height: 2rem;
+        border-radius: 0.625rem;
+        border: 1px solid $myGrey;
+        &::placeholder {
+          padding-left: 1rem;
+        }
+
+        @media (max-width: 768px) {
+          width: 100%;
+          height: 3rem;
+        }
+      }
+
+      .textArea {
+        width: 32.938rem;
+        height: 7.5rem;
+        border: 1px solid $myGrey;
+        resize: none;
+        border-radius: 0.625rem;
+        &::placeholder {
+          padding-left: 1rem;
+          padding-top: 1rem;
+        }
+
+        @media (max-width: 768px) {
+          width: 100%;
+        }
+      }
+
+      .button {
+        width: 14.813rem;
+        height: 3rem;
+        border-radius: 0.938rem;
+        border: 1px solid black;
+        font-weight: 400;
+        font-size: 1rem;
+        margin-top: 2rem;
+
+        @media (max-width: 768px) {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

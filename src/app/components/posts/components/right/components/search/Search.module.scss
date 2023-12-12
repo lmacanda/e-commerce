@@ -1,0 +1,25 @@
+@import "../../../../../../colors";
+
+.search {
+  width: 19.438rem;
+  height: 3.625rem;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  padding: 0 10px;
+  outline: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .search__input {
+    width: 100%;
+    padding: 0 10px;
+    font-size: 1rem;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .search__btn {
+    outline: none;
+  }
+}

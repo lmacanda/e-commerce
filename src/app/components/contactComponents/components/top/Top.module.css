@@ -1,0 +1,14 @@
+.container {
+  text-align: center;
+}
+.container .title {
+  font-size: 2.25rem;
+  font-weight: 600;
+  line-height: 3.375rem;
+}
+.container .subtitle {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: center;
+}/*# sourceMappingURL=Top.module.css.map */

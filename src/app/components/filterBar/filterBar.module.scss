@@ -1,0 +1,55 @@
+.filter_bar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2% 5%;
+  background-color: rgba(250, 244, 244, 1);
+  font-size: 20px;
+  font-weight: 400;
+  margin-top: 3%;
+
+  &_left {
+    flex-direction: column;
+    display: inline-flex;
+    gap: 6%;
+
+    &_icons {
+      display: flex;
+      justify-content: center;
+      gap: 10%;
+      margin-bottom: 3%;
+    }
+
+    &_showing {
+      display: none;
+    }
+  }
+
+  &_right {
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .filter_bar {
+    flex-direction: row;
+
+    &_left {
+      flex-direction: row;
+      width: 50%;
+
+      &_showing {
+        display: inline;
+      }
+    }
+
+    &_right {
+      width: 50%;
+      gap: 2%;
+    }
+  }
+}

@@ -1,0 +1,18 @@
+.hero {
+  background-image: url("/images/hero.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+.hero_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hero_content_logo {
+  margin-top: 5%;
+}/*# sourceMappingURL=hero.module.css.map */

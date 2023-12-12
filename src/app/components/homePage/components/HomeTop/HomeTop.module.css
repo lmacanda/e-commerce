@@ -1,0 +1,27 @@
+.container {
+  background-color: #fbebb5;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 3.5em;
+}
+.container .text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container .text .title {
+  font-size: 4rem;
+  font-weight: 500;
+  line-height: 6rem;
+}
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    text-align: center;
+    padding: 2em;
+  }
+}
+.container .image {
+  margin-top: 2em;
+}/*# sourceMappingURL=HomeTop.module.css.map */

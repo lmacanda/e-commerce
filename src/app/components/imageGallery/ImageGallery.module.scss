@@ -1,0 +1,48 @@
+.image_gallery {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  &_thumbnails {
+    &_container {
+      display: flex;
+      flex-direction: row;
+      &_item {
+        cursor: pointer;
+        width: 50px; // Adjust the width of the thumbnails
+        height: 50px; // Adjust the height of the thumbnails
+        margin-right: 1rem;
+      }
+    }
+  }
+
+  &_main_image_container {
+    &_item {
+      width: 100%;
+      height: 400px;
+      object-fit: contain;
+      margin-top: 1rem;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .image_gallery {
+    flex-direction: row;
+    &_thumbnails {
+      &_container {
+        flex-direction: column;
+        &_item {
+          margin-bottom: 1rem;
+        }
+      }
+    }
+    &_main_image_container {
+      &_item {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}

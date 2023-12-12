@@ -1,0 +1,29 @@
+.container {
+  background-color: #fbebb5;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 3.5em;
+
+  .text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .title {
+      font-size: 4rem;
+      font-weight: 500;
+      line-height: 6rem;
+    }
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    text-align: center;
+    padding: 2em;
+  }
+
+  .image {
+    margin-top: 2em;
+  }
+}

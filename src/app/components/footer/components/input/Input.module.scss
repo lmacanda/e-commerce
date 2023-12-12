@@ -1,0 +1,11 @@
+@import "../../../../colors.scss";
+
+.footerInput {
+  background-color: none;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid black;
+  &::placeholder {
+    color: $myGrey;
+  }
+}

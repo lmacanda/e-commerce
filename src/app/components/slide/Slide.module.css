@@ -1,0 +1,46 @@
+.container {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  padding: 4rem;
+}
+.container .textCenter {
+  text-align: center;
+}
+.container .textCenter .title {
+  font-size: 2.25rem;
+  font-weight: 500;
+  line-height: 3.375rem;
+}
+.container .textCenter .subtitle {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 3.37rem;
+  color: #9f9f9f;
+}
+@media (max-width: 768px) {
+  .container .textCenter .subtitle {
+    line-height: 1.4rem;
+  }
+}
+.container .center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3em;
+}
+.container .tiles {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    width: 100%;
+  }
+}/*# sourceMappingURL=Slide.module.css.map */

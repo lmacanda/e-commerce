@@ -1,0 +1,46 @@
+.filter_bar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2% 5%;
+  background-color: rgb(250, 244, 244);
+  font-size: 20px;
+  font-weight: 400;
+}
+.filter_bar_left {
+  flex-direction: column;
+  display: inline-flex;
+  gap: 6%;
+}
+.filter_bar_left_icons {
+  display: flex;
+  justify-content: center;
+  gap: 10%;
+  margin-bottom: 3%;
+}
+.filter_bar_left_showing {
+  display: none;
+}
+.filter_bar_right {
+  display: flex;
+  justify-content: center;
+  gap: 5%;
+  align-items: center;
+}
+
+@media screen and (min-width: 600px) {
+  .filter_bar {
+    flex-direction: row;
+  }
+  .filter_bar_left {
+    flex-direction: row;
+    width: 50%;
+  }
+  .filter_bar_left_showing {
+    display: inline;
+  }
+  .filter_bar_right {
+    width: 50%;
+    gap: 2%;
+  }
+}/*# sourceMappingURL=filterBar.module.css.map */

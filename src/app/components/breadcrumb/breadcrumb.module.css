@@ -1,0 +1,12 @@
+.navigation {
+  display: flex;
+  margin-bottom: 5%;
+}
+.navigation_home {
+  font-size: 1rem;
+  font-weight: 500;
+}
+.navigation_path {
+  font-size: 1rem;
+  font-weight: 300;
+}/*# sourceMappingURL=breadcrumb.module.css.map */

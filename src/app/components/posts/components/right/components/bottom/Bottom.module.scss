@@ -1,0 +1,40 @@
+@import "../../../../../../colors";
+
+.container {
+  .title {
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding: 1rem;
+  }
+  .recent__posts {
+    .list__items {
+      line-height: 2rem;
+
+      .list__flex {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        padding: 1rem;
+
+        .list__flex__text {
+          display: flex;
+          flex-direction: column;
+          width: 145px;
+
+          .list_title {
+            font-size: 0.875rem;
+            font-weight: 500;
+            color: black;
+            line-height: 1.2rem;
+          }
+
+          .list_date {
+            font-size: 0.75rem;
+            font-weight: 400;
+            color: $myGrey;
+          }
+        }
+      }
+    }
+  }
+}

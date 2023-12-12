@@ -1,0 +1,39 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8rem;
+  background-color: #fff9e5;
+}
+.container .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.container .text .textRegular {
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 2.25rem;
+}
+.container .text .textBold {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 4.875rem;
+}
+.container .text .button {
+  width: 15.938rem;
+  height: 4rem;
+  border: 1px solid black;
+}
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    text-align: center;
+    padding: 2em;
+  }
+}
+.container .image {
+  margin-top: 2em;
+}/*# sourceMappingURL=NewArival.module.css.map */

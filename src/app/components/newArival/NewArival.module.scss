@@ -1,0 +1,39 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8rem;
+  background-color: #fff9e5;
+  .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    .textRegular {
+      font-size: 1.5rem;
+      font-weight: 500;
+      line-height: 2.25rem;
+    }
+    .textBold {
+      font-size: 3rem;
+      font-weight: 700;
+      line-height: 4.875rem;
+    }
+    .button {
+      width: 15.938rem;
+      height: 4rem;
+      border: 1px solid black;
+    }
+  }
+  @media (max-width: 768px) {
+    flex-direction: column;
+    text-align: center;
+    padding: 2em;
+  }
+
+  .image {
+    margin-top: 2em;
+  }
+}

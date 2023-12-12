@@ -1,0 +1,25 @@
+.container {
+  padding: 6rem;
+}
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    padding-top: 1rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-bottom: 0;
+  }
+}
+.container .bottom {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-evenly;
+  padding-top: 3rem;
+  gap: 3rem;
+}
+@media (max-width: 768px) {
+  .container .bottom {
+    flex-direction: column;
+    padding: 0;
+  }
+}/*# sourceMappingURL=ContactComponent.module.css.map */

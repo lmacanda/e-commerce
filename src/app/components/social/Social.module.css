@@ -1,0 +1,47 @@
+.container {
+  background-image: url(../../../../public/images/social/IMG.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container .title {
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 4rem;
+  letter-spacing: 0em;
+}
+.container .subtitle {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 4rem;
+  letter-spacing: 0em;
+}
+.container .button {
+  width: 255px;
+  height: 64px;
+  top: 4314px;
+  left: 592px;
+  border-radius: 50px;
+  background-color: #faf4f4;
+  box-shadow: 0 20px 20px 0 rgb(211, 207, 207);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0em;
+}
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    text-align: center;
+    padding: 2em;
+  }
+}
+.container .image {
+  margin-top: 2em;
+}/*# sourceMappingURL=Social.module.css.map */

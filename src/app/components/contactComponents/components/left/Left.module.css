@@ -1,0 +1,24 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+@media (max-width: 768px) {
+  .container {
+    padding-top: 2rem;
+  }
+}
+.container .box {
+  display: flex;
+  align-items: baseline;
+  gap: 2rem;
+}
+.container .box .title {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.container .box .subtitle {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+}/*# sourceMappingURL=Left.module.css.map */

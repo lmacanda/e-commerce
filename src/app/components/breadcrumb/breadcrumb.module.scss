@@ -1,0 +1,14 @@
+.navigation {
+  display: flex;
+  margin-bottom: 5%;
+
+  &_home {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+
+  &_path {
+    font-size: 1rem;
+    font-weight: 300;
+  }
+}

@@ -1,0 +1,33 @@
+.container {
+  background: #faf4f4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+}
+
+.padd {
+  padding: 50px;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 48px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.subTitle {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #9f9f9f;
+}/*# sourceMappingURL=info.module.css.map */

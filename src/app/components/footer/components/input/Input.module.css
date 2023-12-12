@@ -1,0 +1,12 @@
+.footerInput {
+  background-color: none;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid black;
+}
+.footerInput::-moz-placeholder {
+  color: #9f9f9f;
+}
+.footerInput::placeholder {
+  color: #9f9f9f;
+}/*# sourceMappingURL=Input.module.css.map */

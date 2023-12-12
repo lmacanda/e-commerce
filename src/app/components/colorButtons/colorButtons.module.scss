@@ -1,0 +1,11 @@
+.color_buttons {
+  display: flex;
+  gap: 5%;
+  margin-bottom: 10%;
+
+  &_btn {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+  }
+}

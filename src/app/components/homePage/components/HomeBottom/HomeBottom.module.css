@@ -1,0 +1,21 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+  background-color: #faf4f4;
+}
+.container .content {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+}
+.container .content .button {
+  display: flex;
+  align-items: baseline;
+  flex-direction: column;
+}
+.container .content .button .text {
+  font-size: 2.25rem;
+  font-weight: 500;
+}/*# sourceMappingURL=HomeBottom.module.css.map */
