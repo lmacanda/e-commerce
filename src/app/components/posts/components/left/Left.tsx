@@ -127,6 +127,7 @@ function Left() {
 
   useEffect(() => {
     // Fetch data based on currentPage and itemsPerPage
+
     setData(blogPosts);
   }, [currentPage]);
 
