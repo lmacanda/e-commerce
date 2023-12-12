@@ -1,0 +1,28 @@
+.product_description {
+  &_text {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: rgba(159, 159, 159, 1);
+  }
+  &_images {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .product_description {
+    &_images {
+      flex-direction: row;
+      align-items: center;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .product_description_images_item {
+    width: 828px;
+    width: 551px;
+  }
+}

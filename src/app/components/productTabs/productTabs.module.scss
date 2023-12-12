@@ -1,0 +1,31 @@
+.container {
+  padding: 3% 0 3% 0;
+  border-top: 1px solid rgba(217, 217, 217, 1);
+  border-bottom: 1px solid rgba(217, 217, 217, 1);
+
+  &_product_tabs {
+    display: flex;
+
+    align-items: center;
+    gap: 2%;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: rgba(159, 159, 159, 1);
+    margin-bottom: 3%;
+
+    div {
+      cursor: pointer;
+      text-align: center;
+    }
+  }
+}
+
+.active {
+  color: rgba(0, 0, 0, 1);
+}
+
+@media screen and (min-width: 768px) {
+  .container_product_tabs {
+    justify-content: center;
+  }
+}
