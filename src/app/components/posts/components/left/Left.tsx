@@ -121,7 +121,7 @@ const blogPosts = [
 ];
 
 function Left() {
-  const [data, setData] = useState([]);
+  const [data, setData] = useState<IBlogPost[]>([]);
   const [currentPage, setCurrentPage] = useState(1);
   const [itemsPerPage] = useState(3); // or whatever number you want
 
