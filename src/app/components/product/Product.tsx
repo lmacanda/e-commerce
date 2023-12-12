@@ -46,6 +46,7 @@ const Product: React.FC = () => {
           displayType === "list" ? (
             <ProductItem key={product.id} product={product} />
           ) : (
+            //@ts-ignore
             <ProductCard key={product.id} product={product} />
           )
         )}
