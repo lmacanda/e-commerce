@@ -39,8 +39,8 @@ function Right() {
           <textarea
             name="message"
             id="message"
-            cols="50"
-            rows="4"
+            cols={50}
+            rows={4}
             placeholder="Hi! i'd like to ask about."
             className={styles.textArea}
           ></textarea>
