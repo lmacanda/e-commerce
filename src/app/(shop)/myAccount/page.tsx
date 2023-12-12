@@ -6,7 +6,7 @@ import MyCartButton from "@/app/components/myCartButton/MyCartButton";
 import MyFavouritesButton from "@/app/components/myFavouritesButton/MyFavouritesButton";
 
 // Define the myAccount component
-export default function myAccount() {
+export default function MyAccount() {
   // Use the useRouter hook to access the Next.js router
 
   // Use the useSession hook to get the user session
