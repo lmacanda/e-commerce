@@ -2,12 +2,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   gap: 1.5rem;
 
   .product__wrapper {
     display: flex;
     flex-direction: column;
-    align-items: baseline;
+    align-items: center;
     gap: 2.5rem;
 
     .product__text {
@@ -22,8 +23,15 @@
       }
     }
   }
+}
 
-  @media (max-width: 768px) {
-    flex-direction: column;
+@media (min-width: 758px) {
+  .container {
+    flex-direction: row;
+    align-items: baseline;
+
+    .product__wrapper {
+      align-items: baseline;
+    }
   }
 }
