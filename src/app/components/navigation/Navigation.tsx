@@ -35,7 +35,6 @@ const Navigation = () => {
   }, [showSidebar]);
 
   return (
-
     <>
       <button className={styles.hamburger} onClick={toggleSidebar}>
         <Image
@@ -133,7 +132,6 @@ const Navigation = () => {
       </nav>
       {showSideCart && <SideCart />}
     </>
-
   );
 };
 
