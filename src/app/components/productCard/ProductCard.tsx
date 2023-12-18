@@ -13,6 +13,7 @@ import ProductTabs from "../productTabs/ProductTabs";
 import ProductDescription from "../productDescription/ProductDescription";
 import ProductAdditonalInfo from "../productAdditionalInfo/ProductAdditionalInfo";
 import ProductReviews from "../productReviews/ProductReviews";
+import BreadcrumbPage from "../breadcrumbPage/BreadcrumbPage";
 
 interface ProductCardProps {
   product: {
@@ -83,6 +84,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
   }
   return (
     <>
+      <BreadcrumbPage productName={product.name} />
       <div className={styles.product}>
         <ImageGallery images={product.images} />
         <div className={styles.product_description}>
@@ -144,26 +146,28 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
             <li>Category: {product.category}</li>
             <li>Tags: {product.tags}</li>
             <div className={styles.product_social}>
-              <li>
-                Share:
-                <Image
-                  src={`/images/social/facebook.svg`}
-                  width={20}
-                  height={20}
-                  alt="facebook"
-                />
-                <Image
-                  src={`/images/social/linkedin.svg`}
-                  width={20}
-                  height={20}
-                  alt="instagram"
-                />
-                <Image
-                  src={`/images/social/twitter.svg`}
-                  width={20}
-                  height={20}
-                  alt="linkedin"
-                />
+              <li className={styles.product_social_item}>
+                <div className={styles.product_social_item_text}>Share:</div>
+                <div className={styles.product_social_item_icons}>
+                  <Image
+                    src={`/images/social/facebook.svg`}
+                    width={20}
+                    height={20}
+                    alt="facebook"
+                  />
+                  <Image
+                    src={`/images/social/linkedin.svg`}
+                    width={20}
+                    height={20}
+                    alt="instagram"
+                  />
+                  <Image
+                    src={`/images/social/twitter.svg`}
+                    width={20}
+                    height={20}
+                    alt="linkedin"
+                  />
+                </div>
               </li>
             </div>
           </ul>

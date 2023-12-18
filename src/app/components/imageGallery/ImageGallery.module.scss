@@ -3,9 +3,10 @@
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
+  margin-top: 5%;
   &_thumbnails {
     &_container {
-      display: flex;
+      display: none;
       flex-direction: row;
       &_item {
         cursor: pointer;
@@ -29,8 +30,11 @@
 @media screen and (min-width: 768px) {
   .image_gallery {
     flex-direction: row;
+    margin-top: 0;
+
     &_thumbnails {
       &_container {
+        display: flex;
         flex-direction: column;
         &_item {
           margin-bottom: 1rem;

@@ -67,7 +67,7 @@ const SideCart = () => {
                     backgroundSize: "contain",
                     backgroundPosition: "center",
                     backgroundRepeat: "no-repeat",
-                    backgroundColor: "rgba(251, 235, 181, 1)",
+
                     width: "105px",
                     height: "105px",
                     borderRadius: "10px",

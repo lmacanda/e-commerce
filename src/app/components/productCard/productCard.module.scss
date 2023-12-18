@@ -4,6 +4,7 @@
   justify-content: center;
   align-items: center;
   font-family: "Poppins", sans-serif;
+  margin-bottom: 3%;
 
   &_description {
     &_name {
@@ -81,13 +82,17 @@
   }
 
   &_social {
-    color: black;
     width: 100%;
 
-    &_icons {
+    &_item {
       display: flex;
-      gap: 5%;
-      align-items: center;
+
+      &_icons {
+        display: flex;
+        gap: 10%;
+        align-items: center;
+        margin-left: 2%;
+      }
 
       &_text {
         color: rgba(159, 159, 159, 1);

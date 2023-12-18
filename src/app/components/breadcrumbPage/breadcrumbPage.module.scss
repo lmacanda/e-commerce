@@ -1,0 +1,25 @@
+.navigation {
+  display: flex;
+  padding-top: 15%;
+  margin-left: 3%;
+  gap: 1%;
+
+  &_home {
+    color: rgba(159, 159, 159, 1);
+  }
+
+  &_shop {
+    color: rgba(159, 159, 159, 1);
+  }
+
+  &_product {
+    font-weight: 400;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .navigation {
+    margin-top: 5%;
+    padding: 0;
+  }
+}
