@@ -37,6 +37,7 @@ function getPageTitle(pathname: string): string {
     "/shop": "Shop",
     "/about": "About",
     "/contact": "Contact",
+    "/cart": "Cart",
     // Add more mappings for other pages as needed
   };
 
