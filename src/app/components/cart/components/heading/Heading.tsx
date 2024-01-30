@@ -20,7 +20,10 @@ function Heading() {
         <li className={styles.cart__heading__item}>Product</li>
         <li className={styles.cart__heading__item}>Price</li>
         <li className={styles.cart__heading__item}>Quantity</li>
+        <li className={styles.cart__heading__item}>Color</li>
+        <li className={styles.cart__heading__item}>Size</li>
         <li className={styles.cart__heading__item}>Subtotal</li>
+
         <li></li>
       </ul>
 
@@ -39,6 +42,9 @@ function Heading() {
           <li className={styles.cart__heading__item}>
             <input type="text" value={item.quantity} className={styles.input} />
           </li>
+          <li className={styles.cart__heading__item}>{item.color}</li>
+
+          <li className={styles.cart__heading__item}>{item.size}</li>
           <li className={styles.cart__heading__item}>
             Rs.{item.quantity * item.price}
           </li>
