@@ -1,4 +1,7 @@
 .side_cart {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   transition: transform 0.3s ease-in-out;
   position: fixed;
   top: 0;
@@ -7,6 +10,7 @@
   width: 30%;
   background-color: white;
   transform: translateX(0); // Add this line
+  box-shadow: -5px 0px 10px rgba(0, 0, 0, 0.2);
 
   z-index: 2;
 
@@ -27,35 +31,33 @@
   }
 
   &_content {
-    display: flex;
-    flex-direction: column;
+    &_table {
+      width: 100%;
+      border-collapse: collapse;
 
-    padding: 3%;
+      &_image {
+        width: 105px;
+        height: 105px;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 10px;
+      }
 
-    &_item {
-      display: flex;
-      justify-content: space-between;
-      margin-bottom: 5%;
+      &_name {
+        vertical-align: middle;
+      }
 
-      &_left {
-        display: flex;
-        align-items: center;
-        gap: 1rem;
+      &_quantity {
+        vertical-align: middle;
+      }
 
-        &_text {
-          width: 50%;
-        }
+      &_price {
+        vertical-align: middle;
+      }
 
-        &_name {
-          font-size: 1rem;
-          font-weight: 500;
-        }
-
-        &_price {
-          font-size: 0.8rem;
-          font-weight: 500;
-          color: rgba(184, 142, 47, 1);
-        }
+      &_delete_btn {
+        vertical-align: middle;
       }
     }
   }
@@ -82,6 +84,8 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      margin-bottom: 3%;
+      padding: 0 3%;
 
       button {
         padding: 0.4rem 2rem;

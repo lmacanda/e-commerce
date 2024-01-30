@@ -194,7 +194,7 @@ function Left() {
               </div>
             </div>
           ))}
-      ;
+
       <div className={styles.pagination}>
         {[...Array(totalPages)].map((_, index) => (
           <button

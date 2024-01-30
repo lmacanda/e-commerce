@@ -77,7 +77,6 @@ function BlogPost() {
           </div>
         </div>
       ))}
-      ;
     </div>
   );
 }

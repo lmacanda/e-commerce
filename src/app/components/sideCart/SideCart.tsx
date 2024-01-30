@@ -43,62 +43,56 @@ const SideCart = () => {
       <main
         className={`${styles.side_cart} ${isSideCartOpen ? "" : styles.closed}`}
       >
-        <div className={styles.side_cart_header}>
-          <h3 className={styles.side_cart_header_title}>Shopping Cart</h3>
-          <button
-            className={styles.side_cart_close_btn}
-            onClick={closeSideCart}
-          >
-            <Image
-              src={`/images/cart/group.svg`}
-              alt="cart"
-              width={20}
-              height={20}
-            />
-          </button>
-        </div>
         <div className={styles.side_cart_content}>
-          {cartItems?.map((item) => (
-            <div key={item.id} className={styles.side_cart_content_item}>
-              <div className={styles.side_cart_content_item_left}>
-                <div
-                  style={{
-                    backgroundImage: `url(/images/${item.image}.png)`,
-                    backgroundSize: "contain",
-                    backgroundPosition: "center",
-                    backgroundRepeat: "no-repeat",
-
-                    width: "105px",
-                    height: "105px",
-                    borderRadius: "10px",
-                  }}
-                ></div>
-                <div className={styles.side_cart_content_item_left}>
-                  <p className={styles.side_cart_content_item_left_name}>
+          <div className={styles.side_cart_header}>
+            <h3 className={styles.side_cart_header_title}>Shopping Cart</h3>
+            <button
+              className={styles.side_cart_close_btn}
+              onClick={closeSideCart}
+            >
+              <Image
+                src={`/images/cart/group.svg`}
+                alt="cart"
+                width={20}
+                height={20}
+              />
+            </button>
+          </div>
+          <table className={styles.side_cart_content_table}>
+            <tbody>
+              {cartItems?.map((item) => (
+                <tr key={item.id}>
+                  <td
+                    className={styles.side_cart_content_table_image}
+                    style={{
+                      backgroundImage: `url(/images/${item.image}.png)`,
+                    }}
+                  ></td>
+                  <td className={styles.side_cart_content_table_name}>
                     {item.name}
-                  </p>
-                  <p>
+                  </td>
+                  <td className={styles.side_cart_content_table_quantity}>
                     {item.quantity} X{" "}
-                    <span className={styles.side_cart_content_item_left_price}>
+                    <span className={styles.side_cart_content_table_price}>
                       Rs.{item.price}
                     </span>
-                  </p>
-                </div>
-              </div>
-              <button
-                className={styles.side_cart_content_delete_btn}
-                onClick={() => handleRemoveFromCart(item)}
-              >
-                <Image
-                  src={`/images/cart/delete.svg`}
-                  alt="delete"
-                  width={20}
-                  height={20}
-                />
-              </button>
-            </div>
-          ))}
+                  </td>
+                  <td className={styles.side_cart_content_table_delete_btn}>
+                    <button onClick={() => handleRemoveFromCart(item)}>
+                      <Image
+                        src={`/images/cart/delete.svg`}
+                        alt="delete"
+                        width={20}
+                        height={20}
+                      />
+                    </button>
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
         </div>
+
         <div className={styles.side_cart_footer}>
           <div className={styles.side_cart_footer_total}>
             <p className={styles.side_cart_footer_total_text}>Subtotal</p>
