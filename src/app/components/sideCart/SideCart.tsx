@@ -12,6 +12,7 @@ import { useRouter } from "next/navigation";
 
 const SideCart = () => {
   const cartItems = useSelector((state: RootState) => state.cart.cartItems);
+
   console.log(cartItems);
   const dispatch = useDispatch();
   const router = useRouter();
@@ -51,7 +52,7 @@ const SideCart = () => {
               onClick={closeSideCart}
             >
               <Image
-                src={`/images/cart/group.svg`}
+                src={`/images/cart/Group.svg`}
                 alt="cart"
                 width={20}
                 height={20}

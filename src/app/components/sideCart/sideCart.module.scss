@@ -96,6 +96,12 @@
         font-size: 1rem;
         font-weight: 500;
         cursor: pointer;
+
+        &:hover {
+          background-color: rgba(184, 142, 47, 1);
+          color: white;
+          border: rgba(184, 142, 47, 1);
+        }
       }
     }
   }
