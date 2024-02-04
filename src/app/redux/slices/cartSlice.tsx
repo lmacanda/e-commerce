@@ -1,5 +1,30 @@
 import { createSlice } from "@reduxjs/toolkit";
 
+const items =
+  localStorage.getItem("cartItems") !== null
+    ? JSON.parse(localStorage.getItem("cartItems") || "")
+    : [];
+
+const totalAmount =
+  localStorage.getItem("totalAmount") !== null
+    ? JSON.parse(localStorage.getItem("totalAmount") || "")
+    : 0;
+
+const totalItems =
+  localStorage.getItem("totalItems") !== null
+    ? JSON.parse(localStorage.getItem("totalItems") || "")
+    : 0;
+
+const setItemFunc = (
+  item: ICart[],
+  totalAmount: number,
+  totalItems: number
+) => {
+  localStorage.setItem("cartItems", JSON.stringify(item));
+  localStorage.setItem("totalAmount", JSON.stringify(totalAmount));
+  localStorage.setItem("totalItems", JSON.stringify(totalItems));
+};
+
 export interface ICart {
   id: string;
   name: string;
@@ -17,9 +42,9 @@ interface CartState {
 }
 
 const initialState: CartState = {
-  cartItems: [],
-  totalAmount: 0,
-  totalItems: 0,
+  cartItems: items,
+  totalAmount: totalAmount,
+  totalItems: totalItems,
 };
 
 export const cartSlice = createSlice({
@@ -45,6 +70,12 @@ export const cartSlice = createSlice({
       state.totalItems = state.cartItems.reduce(
         (accumulator, item) => accumulator + item.quantity,
         0
+      );
+
+      setItemFunc(
+        state.cartItems.map((item) => item),
+        state.totalAmount,
+        state.totalItems
       );
     },
     incrementQ(state, action) {
@@ -74,6 +105,11 @@ export const cartSlice = createSlice({
       const item = action.payload;
       state.cartItems = state.cartItems.filter(
         (product) => product.id !== item.id
+      );
+      setItemFunc(
+        state.cartItems.map((item) => item),
+        state.totalAmount,
+        state.totalItems
       );
     },
   },
